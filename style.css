@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap");
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+:root {
+  --clr-white-100: #fff;
+
+  --clr-green-100: #e6fcf5;
+  --clr-green-200: #c3fae8;
+  --clr-green-300: #099268;
+  --clr-green-400: #087f5b;
+
+  --clr-gray-100: #ced4da;
+  --clr-gray-200: #868e96;
+  --clr-gray-300: #495057;
+  --clr-gray-400: #343a40;
+
+  --clr-gray-500: #f8f9fa;
+  --clr-gray-600: #e6ecef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--clr-gray-400);
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 800px;
+  margin-top: 100px;
+  font-size: 18px;
+  /* border: 1px solid var(--clr-gray-400); */
+  border-collapse: collapse;
+}
+
+th,
+td {
+  /* border: 1px solid var(--clr-gray-400); */
+  padding: 16px 24px;
+  text-align: left;
+}
+
+thead tr {
+  background-color: var(--clr-green-400);
+  color: var(--clr-white-100);
+}
+
+thead th {
+  width: 25%;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--clr-gray-500);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--clr-gray-600);
+}
